@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F7FB;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header {
+  font-family: 'Karla', sans-serif;
+  color: #293264;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.intro-description {
+  color: #293264;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.intro-btn {
+  color: #F5F7FB;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 13px 45px;
+  border-radius: 40px;
+  background: #4D5B9E;
+  border: none;
+  margin: 0px;
+}
+
+.intro-btn:hover {
+  background: #3E497F;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 50px 90px
+}
+
+.quiz-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px #DBDEF0;
+  border-bottom-style: solid;
+  padding-bottom: 15px
+}
+
+.quiz-answers {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.quiz-question-prompt {
+  color: #293264;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.quiz-question-answer {
+  color: #293264;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 40px;
+  background: none;
+  padding: 10px 20px;
+}
+
+.quiz-question-answer:focus {
+  outline: none;
+}
+
+
+.quiz-control {
+  color: #F5F7FB;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 13px 45px;
+  border-radius: 40px;
+  background: #4D5B9E;
+  border: none;
+  margin: 0px;
+}
+
+.quiz-score {
+  color: #293264;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0px;
+}
