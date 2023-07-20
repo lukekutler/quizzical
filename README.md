@@ -1,0 +1,1 @@
+This is a quick n' direty quiz app created in React as a part of Bob Ziroll's React course. This project uses a trivia API to populate questions, consumes that data and alows the user to try their smarts.

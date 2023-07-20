@@ -5,10 +5,8 @@ import Intro from "./components/Intro"
 import Quiz from "./components/Quiz"
 import Answers from "./components/Answers"
 
-// Main App File....
-
 export default function App() {
-  const [progress, setProgress] = React.useState(2)
+  const [progress, setProgress] = React.useState(0)
   const [questions, setQuestions] = React.useState([])
   const [score, setScore] = React.useState({
     answered: 0,
