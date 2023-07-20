@@ -5,7 +5,7 @@ import Intro from "./components/Intro"
 import Quiz from "./components/Quiz"
 import Answers from "./components/Answers"
 
-// Main App File.
+// Main App File....
 
 export default function App() {
   const [progress, setProgress] = React.useState(2)
