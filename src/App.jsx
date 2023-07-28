@@ -67,7 +67,7 @@ export default function App() {
 
   function restartQuiz() {
     getQuestions()
-    setProgress(0)
+    setProgress(1)
   }
 
   async function getQuestions() {
