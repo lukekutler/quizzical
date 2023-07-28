@@ -1,5 +1,4 @@
 import React from "react"
-import Confetti from "react-confetti"
 
 export default function Answers({ questions, handleRestart, finalScore }) {
     const questionElements = questions.map(question => {
@@ -37,16 +36,10 @@ export default function Answers({ questions, handleRestart, finalScore }) {
     })
 
     return (
-        <>
-            <Confetti
-                width={"8000px"}
-                height={"8000px"}
-            />
-            <main className="quiz-container">
-                {questionElements}
-                <h4 className="quiz-score">You scored {finalScore}/5 correct answers!</h4>
-                <button className="quiz-control" onClick={handleRestart}>Play again</button>
-            </main>
-        </>
+        <main className="quiz-container">
+            {questionElements}
+            <h4 className="quiz-score">You scored {finalScore}/5 correct answers!</h4>
+            <button className="quiz-control" onClick={handleRestart}>Play again</button>
+        </main>
     )
 }
