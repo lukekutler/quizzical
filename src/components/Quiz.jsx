@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Quiz({ questions, handleSelect, handleSubmit }) {
+export default function Quiz({ questions, handleSelect, handleSubmit, answered }) {
     const questionElements = questions.map(question => {
         return (
             <div className="quiz-question" key={question.id}>
@@ -17,10 +17,11 @@ export default function Quiz({ questions, handleSelect, handleSubmit }) {
             </div>
         )
     })
+
     return (
         <main className="quiz-container">
             {questionElements}
-            <button className="quiz-control" onClick={handleSubmit}>Check Answers</button>
+            <button disabled={answered !== 5 ? "true" : ""} className="quiz-control" onClick={handleSubmit}>Submit</button>
         </main>
     )
 }

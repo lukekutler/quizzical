@@ -57,12 +57,7 @@ export default function App() {
   }
 
   function checkQuiz() {
-    if (score.answered === 5) {
-      setProgress(2)
-    }
-    else {
-      alert("Please answer all questions!")
-    }
+    setProgress(2)
   }
 
   function restartQuiz() {
@@ -128,7 +123,7 @@ export default function App() {
     case 0:
       return <Intro handleStart={startQuiz} />
     case 1:
-      return <Quiz questions={questions} handleSelect={handleSelect} handleSubmit={checkQuiz} />
+      return <Quiz questions={questions} handleSelect={handleSelect} handleSubmit={checkQuiz} answered={score.answered} />
     case 2:
       return <Answers questions={questions} finalScore={score.correct} handleRestart={restartQuiz} />
   }
